@@ -30,6 +30,9 @@
                     <h1>NuCamp</h1>
                     <h2>a better way to camp</h2>
                 </div>
+                <div class="col-md-4 col-xl-2 mt-4">
+                    <a class="btn btn-info btn-lg" href="#reserveForm" role="button">Reserve Campsite</a>
+                </div>
             </div>
         </div>
     </header>
@@ -70,10 +73,12 @@
             </div>
             <div class="col">
                 <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail" src="img/breadcrumb-trail-thumb.jpg" alt="Breadcrumb Trail" />
+                    <img class="d-flex mr-3 img-thumbnail" src="img/breadcrumb-trail-thumb.jpg"
+                        alt="Breadcrumb Trail" />
                     <div class="media-body align-self-center">
                         <h3>Our Campsites</h3>
-                        <p class="d-none d-sm-block">Explore our growing database of curated campsites and leave your own reviews!</p>
+                        <p class="d-none d-sm-block">Explore our growing database of curated campsites and leave your
+                            own reviews!</p>
                     </div>
                 </div>
             </div>
@@ -86,9 +91,15 @@
             <h2>Featured Campsites</h2>
         </div>
         <div class="col">
-            <h3>React Lake Campground</h3>
-            <p>Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React
-                Lake is a favorite for fly fishers.</p>
+            <div class="media">
+                <div class="media-body align-self-center">
+                    <h3>React Lake Campground</h3>
+                    <p>Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine
+                        React
+                        Lake is a favorite for fly fishers.</p>
+                </div>
+                <img class="d-flex ml-3 img-thumbnail" src="img\react-lake-thumb.jpg" alt="React Lake Thumb">
+            </div>
         </div>
 
     </div>
@@ -102,16 +113,82 @@
                 <img class="d-flex mr-3 img-thumbnail " src="img/bootstrap-thumb.png" alt="Bootstrap Outfitters">
                 <div class="media-body align-self-center">
                     <h3>Bootstrap Outfitters</h3>
-                    <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with gear you need at prices you can't beat.</p>
+                    <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with gear you need at prices you
+                        can't beat.</p>
                 </div>
             </div>
         </div>
 
     </div>
 
+
     </div>
 
-    <footer class="site-footer">
+    <!--Reservation Form-->
+
+    <div class="container">
+
+        <div class="row row-content align-items-center>
+            <div class=" col-sm-6"> 
+
+            <div class="card w-75">
+
+                <div class="card-header bg-info">
+                    <h3 class="text-white">Reserve a Campsite</h3>
+                </div>
+
+                <div class="card-body">
+                    <form id="reserveForm" action="">
+
+                        <div class=" form-group row">
+                            <label for="numCamper" class="col-sm-6 col-form-label"> Number of Campers</label>
+                            <div class="col-sm-6">
+                                <select name="numCamper" id="numCamper" class="form-control">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                        <div class=" form-group row">
+                            <label for="date" class="col-sm-6 col-form-label">Date</label>
+                            <div class="col-sm-6">
+                                <input type="date" name="date" id="date" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col">
+                              <button type="submit" class="btn btn-primary">Reserve</button>
+                            </div>
+                          </div>
+
+                    </form>
+
+                </div>  <!--card Body-->
+                
+            </div>  <!--card-->
+            
+        </div>
+
+    </div>   <!--Row-->
+   
+
+    </div>  <!--Container-->
+    
+
+
+
+
+
+
+
+    <footer class=" site-footer">
         <div class="container">
             <div class="row">
 
