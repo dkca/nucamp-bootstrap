@@ -45,3 +45,10 @@ header h2 {
 .carousel {
     border: solid #5637DD;
 }
+
+/*position buttons to right*/
+#carouselButton {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
